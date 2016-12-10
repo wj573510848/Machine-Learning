@@ -1,7 +1,23 @@
 1.Simple perceptron model
 
+#用Iris dataset验证
+https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data
+
+#perceptron_simple
 简单的感知器模型。
-
 相当于，激活函数为二值函数，大于等于0为1，小于0为-1
-
 权值更新为：W=W+a(y-y_pre)*x_ij
+
+#AdaptiveLinearNeuron
+线性神经元模型，应用批量梯度下降法（Batch gradient descent）
+
+#StochasticGradient
+线性神经元模型，用随机梯度下降法
+Batch gradient descent的计算精度很高，能够得到全局最优值，但是，当样本值很大时，这种方法计算量太大
+Batch gradient descent计算所有训练集来更新一次权值
+Stochastic gradient descent用每一组训练值更新一次权值
+尽管Stochastic gradient descent是BGD的极限趋近，但是由于它更新权值的频率高，往往比BGD更快收敛
+Stochastic gradient descent的误差面有噪音，但是有些时候，这些噪音使得Stochastic gradient descent避过了局部最优值
+Stochastic gradient descent每一次循环（epoch），需要将样本随机打乱
+Stochastic gradient descent的学习率在某些情况下，需要随着时间的增加而变化（一般减小）
+在介于两者算法的还有mini-batch learning
