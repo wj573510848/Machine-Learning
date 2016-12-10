@@ -1,0 +1,7 @@
+1.Simple perceptron model
+
+简单的感知器模型。
+
+相当于，激活函数为二值函数，大于等于0为1，小于0为-1
+
+权值更新为：W=W+a(y-y_pre)*x_ij
