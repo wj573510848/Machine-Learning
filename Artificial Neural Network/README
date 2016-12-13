@@ -21,3 +21,12 @@ Stochastic gradient descent的误差面有噪音，但是有些时候，这些�
 Stochastic gradient descent每一次循环（epoch），需要将样本随机打乱
 Stochastic gradient descent的学习率在某些情况下，需要随着时间的增加而变化（一般减小）
 在介于两者算法的还有mini-batch learning
+
+#my_tools
+画decision regions
+
+#perceptron_sklearn
+用sklearn中的perceptron算法
+运用sklearn的datasets
+运用metrics
+运用train_test_split
